@@ -6,7 +6,9 @@
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
    grid-template-areas: "nav"
    "container"
-   "aboutUs"; 
+   "image2"
+   "aboutUs"
+   "services"; 
 }
 
 #header{
@@ -73,33 +75,53 @@ ul{
   display: grid;
   grid-template-areas: 
   "content image";
-  grid-column-gap: 350px;
+  grid-column-gap: 300px;
   margin-top: 75px;
   
 }
 #main-content{
   grid-area: content;
   background-color: crimson;
- 
+  margin-left: 20px;
   
+}
+h1{
+  font-size: 48px;
 }
 
 
 #main-content p{
-  width: 433px;
-  height: 144px;
+  background-color: blue;
+  width: 400px;
+  height: 150px;
+  font-size: 24px;
 }
 
-#main-content a{
+#contact-link{
   grid-area: contact;
+  background-color: black;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px 5px 10px;
 }
 
 
 #image1{
   grid-area: image;
-  width: 660px;
-  height: 476px;
+  width: 560px;
+  height: 450px;
   
+  
+}
+#image2{
+  grid-area: image2;
+  position: relative;
+  bottom: 60px;
+  width: 886px;
+  height: 476px;
+  margin-left: 20px;
+  grid-column-start: 1;
+  grid-column-end: 9;
   
 }
 
@@ -115,7 +137,22 @@ grid-column-end: 10;
 width: 754px;
 
 }
-h1{
-  color: yellow;
-  font-size: ;
-}
+#services{
+  
+  background-color:;
+  grid-area: services;
+  grid-column-start: 1;
+  grid-column-end: 11;
+  width: 754px;
+  
+  }
+  .features{
+    display:flex; 
+  }
+  #services-img{
+    background-color: white;
+    width: 100px;
+    height: 70px;
+    float: left;
+    margin-right: 20px;
+  }
