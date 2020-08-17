@@ -5,7 +5,8 @@
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
    grid-template-areas: "nav"
-   "container";
+   "container"
+   "aboutUs"; 
 }
 
 #header{
@@ -104,4 +105,13 @@ ul{
 
 footer{
   grid-area: footer;
+}
+#aboutUs{
+text-align: center;
+background-color: orange;
+grid-area: aboutUs;
+grid-column-start: 3;
+grid-column-end: 10;
+width: 754px;
+
 }
