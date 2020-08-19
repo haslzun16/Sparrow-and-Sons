@@ -5,14 +5,14 @@
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
    grid-template-areas: "nav"
-   "container"
+"container"
    "image2"
    "aboutUs"
    "services"; 
 }
 
 #header{
-  background-color: blue;
+  background-color:white;
   grid-area: nav;
   grid-column-start: 1;
   grid-column-end: 12;
@@ -21,15 +21,16 @@
   display: flex;
   align-items: center;
   position: absolute;
-
-  top:0px;
+  
+  
 }
 #header-img{
   width: 100px;
 }
-ul{
+#header ul{
   list-style: none;
   display: flex;
+  font-size: 20px;
 }
 
 .logo > img {
@@ -135,16 +136,23 @@ grid-area: aboutUs;
 grid-column-start: 3;
 grid-column-end: 10;
 width: 754px;
-
+font-size: 20px;
 }
 #services{
-  
-  background-color:;
+  display:grid;
+  grid-template-areas: "header2 list";
   grid-area: services;
   grid-column-start: 1;
-  grid-column-end: 11;
-  width: 754px;
-  
+  grid-column-end: 12;
+  width: 100%;
+  background-color: red; 
+  margin-top: 50px;
+
+  }
+  #services h2{
+grid-area: header2;
+grid-column-start: 1;
+grid-column-end: 3;
   }
   .features{
     display:flex; 
@@ -156,3 +164,9 @@ width: 754px;
     float: left;
     margin-right: 20px;
   }
+#serviceList{
+background-color: teal;
+grid-area: list;
+grid-column-start: 5;
+grid-column-end: 11;
+}
